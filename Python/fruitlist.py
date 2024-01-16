@@ -1,5 +1,5 @@
 def fruit_list(f):
-    sp_chars = "!+//&"
+    sp_chars = "!+/&"
     for char in sp_chars:
         f = f.replace(char, " ")
     return f.split()
