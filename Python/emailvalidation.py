@@ -12,7 +12,7 @@ def validating_email(mail_id):
     required_domain_names=['gmail.com','yahoo.co.in','amazon.com']
     if  domain_name not in required_domain_names:
         return False
-    if not user_name.isalpha() and user_name[0].isdigit():
+    if not user_name.isalnum() and user_name[0].isdigit():
         return False
     return True
 
